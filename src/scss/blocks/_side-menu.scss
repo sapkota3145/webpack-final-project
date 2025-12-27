@@ -1,0 +1,140 @@
+@use "../variables" as *;
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+
+  left: -320px;          
+  transition: left 0.3s;  
+  z-index: 1000;
+
+  width: 320px;
+  height: 100vh;
+  box-sizing: border-box;
+  box-shadow: $shadow-sidebar;
+  overflow-y: auto;
+  background-color: $color-white;
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin: 24px;
+  }
+
+  &__icon {
+    border: none;
+    box-shadow: none;
+    appearance: none;
+    background: transparent;
+    padding-left: 0;
+    padding-right: 15px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-text;
+    padding-left: 10px;
+    display: inline-block;
+    font-weight: 500;
+    box-sizing: border-box;
+    text-shadow: $shadow-text-light;
+
+    &:hover {
+      font-weight: 700;
+      opacity: 0.9;
+      filter: brightness(0.8);
+      text-shadow: $shadow-text-strong;
+    }
+  }
+
+  
+
+  &__item {
+    padding: 12px 0;
+    position: relative;
+
+    &:first-child::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      height: 25px;
+      width: 6px;
+      background-color: $color-accent;
+      border-radius: 0 6px 6px 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__contacts {
+    margin-top: auto;
+    padding: 20px;
+  }
+
+  &__email {
+    display: inline-block;
+    text-decoration: none;
+    height: 24px;
+    color: $color-text;
+  }
+
+  &__phone {
+    display: block;
+    text-decoration: none;
+    font-size: 24px;
+    height: 32px;
+    font-weight: 700;
+    color: $color-text;
+  }
+
+  &__languages {
+    margin-top: 25px;
+
+    > a {
+      text-decoration: none;
+      transition: opacity 0.3s ease, filter 0.3s ease;
+      color: $color-text;
+
+      &:hover {
+        filter: brightness(0.7);
+        opacity: 0.9;
+        font-weight: 700;
+      }
+    }
+  }
+
+
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.side-menu--open {
+  left: 0;
+}
+
+@media (min-width: 1120px) {
+  .side-menu {
+    left: 0;              // always visible
+  }
+
+  .header__menu {
+    display: none;        // optional: hide burger on desktop
+  }
+}

@@ -1,0 +1,188 @@
+@use "../variables" as *;
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 320px;
+  background-color: $color-bg;
+
+  &__title {
+  position: relative;
+  margin: 20px 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-left: 15px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    // top: 30%;
+    width: 6px;
+    height: 32px;
+    background-color: $color-accent;
+    border-radius: 0 6px 6px 0;
+  }
+}
+
+&__menu {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  width: 100%;
+  min-width: 0;
+
+  button {
+  flex: 0 0 auto;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  background: none;
+  color: $color-brand;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $color-chip-border;
+  border-radius: 8px;
+  background-color: transparent;
+  background-color: $color-white;
+  }
+}
+}
+
+
+&__action {
+  display: none;
+}
+}
+
+.body__divider {
+width: 4px;
+height: 40px;
+background-color: $color-accent;
+}
+
+.body__text {
+margin: 0;
+padding-left: 15px;
+}
+
+.readmore {
+width: 132px;
+height: 24px;
+border: none;
+background: none;
+font-weight: 500;
+font-size: 16px;
+display: flex;
+align-items: center;
+
+&__text {
+  margin-left: 10px;
+}
+}
+
+.container {
+display: flex;
+flex-direction: column;
+margin: 20px 0;
+gap: 10px;
+height: 208px;
+}
+
+.only-tablet,
+.only-desktop {
+display: none;
+}
+
+@media (min-width: 769px) {
+.content {
+  max-width: 1119px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 416px;
+  background-color: $color-bg;
+
+  &__action {
+    display: none;
+  }
+
+  &__menu {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+
+  > * {
+    flex: 1 1 25%;
+    min-width: 0;
+    white-space: normal;
+  }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.body__photo {
+  width: 360px;
+  height: 208px;
+}
+
+.only-tablet {
+  display: block;
+  margin: 10px 10px 10px 0;
+}
+}
+
+@media (min-width: 1120px) {
+.content {
+  max-width: none;
+  width: 100%;
+
+  &__action {
+    display: flex;
+    gap: 16px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+  }
+
+  &__menu {
+    justify-content: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: none;
+    background-color: $color-bg;
+  }
+}
+
+.only-tablet {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: $color-bg;
+  margin: 0 auto;
+}
+
+.body__container {
+  display: flex;
+  gap: 450px;
+}
+
+.only-desktop {
+  display: block;
+  margin: 15px 0;
+}
+}

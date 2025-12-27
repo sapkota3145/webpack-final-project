@@ -1,0 +1,82 @@
+@use "../variables" as *;
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  min-width: 320px;
+  height: 88px;
+  padding: 0 16px;
+}
+
+.header {
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__menu {
+    // background-color: none;
+    border: none;
+  }
+
+  &__divider {
+    width: 2px;
+    height: 32px;
+    background-color: $color-divider;
+  }
+
+  &__chat,
+  &__call,
+  &__profile {
+    display: none;
+  }
+
+  
+
+}
+
+@media (min-width:769px){
+  .header {
+    max-width: 1120px;
+
+    &__chat,
+    &__call,
+    &__profile {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__acton {
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    }
+
+    &__action-icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media (min-width: 1120px) {
+  .main-header {
+    display: none;
+  }
+
+  .header {
+    width: 100%;
+    background-color: $color-bg;
+    margin: 0 auto;
+    justify-content: flex-end;
+    gap: 2px;
+
+    &__action {
+      gap: 8px;
+    }
+  }
+}
