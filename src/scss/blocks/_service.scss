@@ -1,0 +1,165 @@
+@use "../variables" as *;
+
+.service-price {
+  width: 1120px;
+
+  &__list {
+    width: auto;
+  }
+
+  &__title {
+    position: relative;
+    padding-top: 16px; 
+    height: 56px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    box-sizing: border-box;
+    color: $color-brand;
+    background: linear-gradient(to right, $color-bg, $color-white);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $color-line;
+    }
+  }
+
+  &__table {
+    width: 100%;
+    height: 324px;
+    margin: 0 32px 0 32px;
+  }
+
+  &__type {
+    background-color: $color-white;
+    border-radius: 6px;
+  }
+
+  &__button {
+    background: $color-btn;
+    color: $color-white;
+    border: none;
+    border-radius: 16px;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+  }
+
+  &__note {
+    width: 421px;
+    height: 60px;
+    margin-left: 32px;
+    font-size: 14px;
+    font-weight: 400;
+    color: $color-text;
+  }
+}
+
+.commercial-proposal {
+  width: 197px;
+  height: 24px;
+  margin-left: 32px;
+  color: $color-text;
+}
+
+.repair-swiper {
+  .swiper-slide {
+    width: 240px;
+  }
+}
+
+/* ===== SWIPER ===== */
+
+.swiper3 {
+  display: none; // hidden by default (desktop)
+  max-width: 100%;
+  margin: 20px 0;
+
+  .swiper-wrapper {
+    height: auto;
+  }
+
+  .swiper-slide {
+    width: 240px;
+    height: 160px;
+  }
+}
+
+.service-card {
+  width: 260px;
+  height: 200px;
+  padding: 16px;
+  box-sizing: border-box;
+
+  background: $color-white;
+  border: 1px solid $color-border;
+  border-radius: 6px;
+
+  &__row {
+    margin-bottom: 34px;
+
+    &--with-button {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: auto;
+    }
+  }
+
+  &__label {
+    font-size: 14px;
+    color: $color-brand;
+  }
+
+  &__value {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: $color-text;
+  }
+
+  &__button {
+    background: $color-btn;
+    color: $color-white;
+    border: none;
+    border-radius: 16px;
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+
+    img {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .swiper3{
+      display: block;
+    }
+    .service-price__list{
+      display: none;
+     }
+    
+  }
+
+  @media (min-width: 768px) {}
+
+    .swiper3 {
+        display: none;
+    }

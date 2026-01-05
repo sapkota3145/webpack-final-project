@@ -1,0 +1,123 @@
+@use "../variables" as *;
+
+.repair-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 100%;
+  color: $color-text;
+}
+
+.repair-card {
+  border: 1px solid $color-border;
+  background-color: $color-white;
+  width: 240px;
+  height: 160px;
+  box-sizing: border-box;
+
+  &__title {
+    margin-left: 16px;
+  }
+
+    &__button {
+      border: none;
+      margin-top: 53.5px;
+      margin-left: 184px;
+      background-color: transparent;
+    }
+  }
+
+
+.swiper2 {
+  display: block;
+  max-width: 100%;
+  height: 200px;
+  margin: 20px 0;
+
+  &-wrapper {
+    height: auto;
+  }
+
+   .swiper2-slide {
+    width: 240px;
+    height: 160px;
+  }
+}
+
+.repair-toggle {
+  border: none;
+  background: transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+/* same size for both icons */
+.toggle-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.toggle-text {
+  font-size: 16px;
+  color: $color-text;
+}
+
+/* default: show-icon visible, hide-icon hidden */
+.toggle-icon--hide {
+  display: none;
+}
+
+/* When expanded, hide SHOW icon and show HIDE icon */
+.repair-toggle.repair-toggle--expanded .toggle-icon--show {
+  display: none;
+}
+
+.repair-toggle.repair-toggle--expanded .toggle-icon--hide {
+  display: inline-block;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .repair-list,
+  .repair-toggle {
+      display: none;
+  }
+
+  .swiper2 {
+      display: block;
+  }
+}
+
+
+@media (min-width: 769px) {
+    .swiper2 {
+        display: none;
+    }
+  .repair-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      width: 100%;
+      color: $color-text;
+    }
+  }
+
+    @media (min-width: 1120px) {
+      .swiper2 {
+          display: none;
+      }
+
+      .repair-list {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 16px;
+          width: 100%;
+          color: $color-text;
+        }
+    }
+
+

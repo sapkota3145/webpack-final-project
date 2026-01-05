@@ -8,6 +8,7 @@
   min-width: 320px;
   height: 88px;
   padding: 0 16px;
+  background-color: #FFFFFF;
 }
 
 .header {
@@ -16,7 +17,7 @@
   }
 
   &__menu {
-    // background-color: none;
+    background-color: transparent;
     border: none;
   }
 
