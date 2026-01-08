@@ -1,0 +1,39 @@
+@use "../variables" as *;
+
+.footer-container {
+  display: flex;
+  width: 100%;
+  position: relative;
+  justify-content: space-between;
+  color: $color-brand;
+  font-weight: 500;
+  margin-left: 32px;
+
+&::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $color-start ; 
+}
+}
+
+  .commercial-container {
+    display: flex;
+    align-items: center;   
+    gap: 8px;   
+    color: $color-text;    
+    font-weight: 400; 
+    font-size: 16px;    
+  }
+  
+
+@media (max-width: 768px) {
+  .footer-container {
+    display: block;
+    text-align: center;
+  }
+  
+}

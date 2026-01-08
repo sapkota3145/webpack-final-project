@@ -9,8 +9,9 @@
   position: relative;
   color: $color-brand;
   font-weight: 400;
-  padding: 16px 0 16px 24px;
+  padding: 16px 0 16px 32px;
   height: 56px;
+  margin-top: 51px;
   box-sizing: border-box;
   background: linear-gradient(to right, $color-bg, $color-white);
 
@@ -33,10 +34,10 @@
   display: block;
   max-width: 100%;
   height: auto;
-  margin: 20px 0;
+  margin: 20px 0 20px 16px;
   // overflow: hidden; 
 
-  &-wrapper {
+  &-wrapper__brand {
     height: 100px;
   }
 
@@ -95,6 +96,7 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  margin-left: 26px;
   cursor: pointer;
 
   &.brands-toggle--expanded {
@@ -102,9 +104,9 @@
       display: none;
     }
 
-    // .toggle-icon--hide {
-    //   display: inline-block;
-    // }
+    .toggle-icon--hide {
+      display: inline-block;
+    }
   }
 }
 
@@ -122,14 +124,14 @@
   color: $color-text;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .brands-grid,
   .brands-toggle {
     display: none;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .swiper {
     display: none;
   }
@@ -139,7 +141,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 16px;
-    padding: 16px;
+    padding: 16px 16px 16px 32px;
     // justify-content: center; 
   }
 }

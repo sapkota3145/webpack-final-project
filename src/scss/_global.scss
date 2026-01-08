@@ -32,3 +32,9 @@ body {
   background-color: $color-bg;
   height: 100vh;
 }
+
+@media( max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}

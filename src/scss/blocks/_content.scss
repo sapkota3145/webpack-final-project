@@ -6,7 +6,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   min-width: 320px;
-  height: 550px;
+  height: 600px;
   background-color: $color-bg;
 
   &__title {
@@ -14,12 +14,12 @@
   margin: 20px 0;
   font-size: 1.7rem;
   font-weight: 700;
-  margin-left: 15px;
+  margin-left: 35px;
 
   &::before {
     content: '';
     position: absolute;
-    left: -15px;
+    left: -35px;
     // top: 30%;
     width: 6px;
     height: 32px;
@@ -36,6 +36,7 @@
   white-space: nowrap;
   width: 100%;
   min-width: 0;
+  padding-left: 16px;
 
   button {
   flex: 0 0 auto;
@@ -68,7 +69,7 @@ background-color: $color-accent;
 
 .body__text {
 margin: 0;
-padding-left: 15px;
+padding-left: 34px;
 }
 
 .readmore {
@@ -80,6 +81,7 @@ font-weight: 500;
 font-size: 16px;
 display: flex;
 align-items: center;
+margin-left: 26px;
 
 &__text {
   margin-left: 10px;
@@ -197,9 +199,10 @@ display: none;
   background:linear-gradient(to right, $color-bg, $color-white );
   height: 56px;
   padding-bottom: 16px;
-  padding-left: 24px;
+  padding-left: 32px;
   box-sizing: border-box;
-  color: #7E7E82;
+  color: $color-brand;
+  font-weight: 400;
 
   &::before {
     content: '';

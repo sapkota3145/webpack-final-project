@@ -12,9 +12,10 @@
     padding-top: 16px; 
     height: 56px;
     padding-bottom: 16px;
-    padding-left: 24px;
+    padding-left: 32px;
     box-sizing: border-box;
     color: $color-brand;
+    font-weight: 400;
     background: linear-gradient(to right, $color-bg, $color-white);
 
     &::before {
@@ -78,21 +79,23 @@
 }
 
 /* ===== SWIPER ===== */
-
 .swiper3 {
-  display: none; // hidden by default (desktop)
+  display: block;
   max-width: 100%;
+  height: auto;
   margin: 20px 0;
-
-  .swiper-wrapper {
-    height: auto;
-  }
-
-  .swiper-slide {
-    width: 240px;
-    height: 160px;
-  }
 }
+
+.swiper-wrapper__service {
+  height: auto;
+}
+
+.swiper-slide__service {
+  width: 260px;
+  height: 200px;
+}
+
+
 
 .service-card {
   width: 260px;
@@ -105,7 +108,7 @@
   border-radius: 6px;
 
   &__row {
-    margin-bottom: 34px;
+    margin-bottom: 16px;
 
     &--with-button {
       display: flex;
@@ -151,6 +154,7 @@
   @media (max-width: 768px) {
     .swiper3{
       display: block;
+      margin-left: 16px;
     }
     .service-price__list{
       display: none;
@@ -158,8 +162,9 @@
     
   }
 
-  @media (min-width: 768px) {}
+  @media (min-width: 769px) {
 
     .swiper3 {
         display: none;
     }
+  }

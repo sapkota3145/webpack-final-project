@@ -6,6 +6,7 @@
   gap: 16px;
   width: 100%;
   color: $color-text;
+  margin-left: 32px;
 }
 
 .repair-card {
@@ -16,6 +17,7 @@
   box-sizing: border-box;
 
   &__title {
+    // color: $color-brand;
     margin-left: 16px;
   }
 
@@ -34,7 +36,7 @@
   height: 200px;
   margin: 20px 0;
 
-  &-wrapper {
+  &-wrapper__repair {
     height: auto;
   }
 
@@ -51,6 +53,7 @@
   align-items: center;
   gap: 6px;
   cursor: pointer;
+  padding: 10px 0 0 32px;
 }
 
 /* same size for both icons */
@@ -89,6 +92,7 @@
 
   .swiper2 {
       display: block;
+      margin-left: 16px;
   }
 }
 
