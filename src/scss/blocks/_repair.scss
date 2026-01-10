@@ -1,12 +1,17 @@
 @use "../variables" as *;
 
+// .repair {
+//   width: 1120px;
+// }
+
 .repair-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 240px);
+  justify-content: space-between;
   gap: 16px;
   width: 100%;
   color: $color-text;
-  margin-left: 32px;
+  padding: 0 32px;
 }
 
 .repair-card {
@@ -121,6 +126,10 @@
           gap: 16px;
           width: 100%;
           color: $color-text;
+        }
+
+        .repair {
+          width: 1120px;
         }
     }
 

@@ -3,7 +3,7 @@ import '../scss/style.scss'
 console.log('It works!')
 
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper1', {
   slidesPerView: "auto",
   spaceBetween: 16,
   pagination: {

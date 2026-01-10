@@ -1,7 +1,7 @@
 @use "../variables" as *;
 
-// .brand-section {
-//   max-width: 1440px;
+// .brands {
+//   width: 1120px;
 //   margin: 0 auto;
 // }
 
@@ -11,7 +11,8 @@
   font-weight: 400;
   padding: 16px 0 16px 32px;
   height: 56px;
-  margin-top: 51px;
+  font-size: 16px;
+  // margin-top: 51px;
   box-sizing: border-box;
   background: linear-gradient(to right, $color-bg, $color-white);
 
@@ -129,6 +130,10 @@
   .brands-toggle {
     display: none;
   }
+
+  .brand-swiper-title{
+    height: 80px;
+  }
 }
 
 @media (min-width: 769px) {
@@ -151,5 +156,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     background-color: $color-bg;
+  }
+  .brands {
+    width: 1120px;
+    margin: 0 auto;
   }
 }

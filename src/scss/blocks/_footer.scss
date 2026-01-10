@@ -7,7 +7,8 @@
   justify-content: space-between;
   color: $color-brand;
   font-weight: 500;
-  margin-left: 32px;
+  padding: 15px 0 0 32px ;
+  // height: 65px;
 
 &::before {
     content: "";
@@ -20,7 +21,7 @@
 }
 }
 
-  .commercial-container {
+.commercial-container {
     display: flex;
     align-items: center;   
     gap: 8px;   
@@ -28,12 +29,21 @@
     font-weight: 400; 
     font-size: 16px;    
   }
+
+  .business-footer {
+    margin: 0;
+    font-size: 14px;
+    color: $color-text;
+  }
   
 
 @media (max-width: 768px) {
   .footer-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    padding-left: 0;
   }
+
   
 }

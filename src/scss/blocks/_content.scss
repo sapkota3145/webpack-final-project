@@ -5,8 +5,9 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  min-width: 320px;
-  height: 600px;
+  // min-width: 320px;
+  // width: 1120px;
+  // height: 600px;
   background-color: $color-bg;
 
   &__title {
@@ -69,7 +70,7 @@ background-color: $color-accent;
 
 .body__text {
 margin: 0;
-padding-left: 34px;
+padding-left: 32px;
 }
 
 .readmore {
@@ -103,7 +104,7 @@ display: none;
 
 @media (min-width: 769px) {
 .content {
-  max-width: 1119px;
+  // max-width: 1119px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -138,6 +139,7 @@ display: none;
   width: 360px;
   height: 208px;
   border-radius: 5px;
+  padding-right: 28px;
   }
   
 }
@@ -150,14 +152,14 @@ display: none;
 
 @media (min-width: 1120px) {
 .content {
-  max-width: none;
-  width: 100%;
+  width: 1120px;
+  height: 400px;
 
   &__action {
     display: flex;
     gap: 16px;
     position: absolute;
-    right: 20px;
+    right: -180px;
     top: 20px;
   }
 
@@ -203,6 +205,7 @@ display: none;
   box-sizing: border-box;
   color: $color-brand;
   font-weight: 400;
+  font-size: 16px;
 
   &::before {
     content: '';
@@ -213,5 +216,16 @@ display: none;
     height: 1px;
     background-color: $color-line;
   }
+}
+
+@media (max-width: 768px) {
+  .content {
+    height: 600px;
+  }
+
+  .repair__title {
+    height: 80px;
+  }
+  
 }
 
