@@ -1,10 +1,5 @@
 @use "../variables" as *;
 
-// .brands {
-//   width: 1120px;
-//   margin: 0 auto;
-// }
-
 .brand-swiper-title {
   position: relative;
   color: $color-brand;
@@ -12,7 +7,6 @@
   padding: 16px 0 16px 32px;
   height: 56px;
   font-size: 16px;
-  // margin-top: 51px;
   box-sizing: border-box;
   background: linear-gradient(to right, $color-bg, $color-white);
 
@@ -159,6 +153,6 @@
   }
   .brands {
     width: 1120px;
-    margin: 0 auto;
+    margin-top: 100px;
   }
 }

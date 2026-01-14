@@ -39,7 +39,7 @@
 
 @media (min-width:769px){
   .header {
-    max-width: 1120px;
+    // max-width: 1120px;
 
     &__chat,
     &__call,
@@ -78,6 +78,7 @@
 
     &__action {
       gap: 8px;
+      width: 150px;
       border: none;
       background-color: transparent;
     }

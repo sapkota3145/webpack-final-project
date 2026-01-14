@@ -2,13 +2,13 @@
 
 .footer-container {
   display: flex;
+  max-width: 1120px;
   width: 100%;
   position: relative;
   justify-content: space-between;
   color: $color-brand;
   font-weight: 500;
   padding: 15px 0 0 32px ;
-  // height: 65px;
 
 &::before {
     content: "";

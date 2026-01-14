@@ -4,7 +4,6 @@
 
   &__list {
     width: 100%;
-    // display: flex;
   }
 
   &__title {
@@ -29,10 +28,6 @@
       background-color: $color-line;
     }
   }
-  
-  // &__table-heading {
-  //   padding-left: 20px;
-  // }
 
   &__table th,
   &__table td {
@@ -73,18 +68,11 @@
       height: 1px;
       background-color: $color-border;
     }
-  
-    
-  //   th {
-  //     padding:10px 20px 20px 0;
-  //     text-align: start;
-  // }
 }
 
 
   &__type {
     background-color: $color-white;
-    // border-radius: 30px;
   }
 
   &__button {

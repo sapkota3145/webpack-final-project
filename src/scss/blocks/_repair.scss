@@ -1,9 +1,5 @@
 @use "../variables" as *;
 
-// .repair {
-//   width: 1120px;
-// }
-
 .repair-list {
   display: grid;
   grid-template-columns: repeat(4, 240px);
@@ -22,7 +18,6 @@
   box-sizing: border-box;
 
   &__title {
-    // color: $color-brand;
     margin-left: 16px;
   }
 
