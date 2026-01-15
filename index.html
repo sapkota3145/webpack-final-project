@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webpack 5 Starter</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+  <script defer="defer" src="./js/bundle.js"></script><link href="style.css" rel="stylesheet"></head>
+  <body>
+    <div class="page">
+      <div class="page__container">
+    <aside class="side-menu">
+      <header class="side-menu__header">
+
+          <button class="side-menu__close side-menu__icon" type="button">
+            <img src="img/Burger Icon Container.svg" alt="close">
+          </button>
+          
+      
+          <img class="logo" src="img/Group.svg" alt="logo">
+  
+          <button class="side-menu__icon">
+          <img class="search" src="img/Search Icon Container.svg" alt="search">
+          </button>
+      </header> 
+  
+      <nav class="side-menu__nav">
+          <ul class="side-menu__list">
+              <li class="side-menu__item">
+                  <a href="#" class="side-menu__link">Equipment repair</a>
+              </li>
+              <li class="side-menu__item">
+                  <a href="#" class="side-menu__link">Services and solution</a>
+              </li>
+              <li class="side-menu__item">
+                  <a href="#" class="side-menu__link">Corporate clients</a>
+              </li>
+  
+              <li class="side-menu__item">
+                  <a href="#" class="side-menu__link side-menu__item--active">Equipment sellers</a>
+              </li>
+  
+              <li class="side-menu__item">
+                  <a href="#" class="side-menu__link">Partners</a>
+              </li>
+  
+              <li class="side-menu__item">
+                  <a href="#" class="side-menu__link">Manufacturers</a>
+              </li>
+  
+              <li class="side-menu__item">
+                  <a href="#" class="side-menu__link">Our service centres</a>
+              </li>
+  
+              <li class="side-menu__item">
+                  <a href="#" class="side-menu__link">Contacts</a>
+              </li>
+            
+          </ul>
+  
+      </nav>
+  
+      <div class="side-menu__contacts">
+          <div class="side-menu__contacts-icon">
+          <button class="side-menu__icon">
+              <img src="img/Chat Icon Container.svg" alt="Call">
+          </button>
+          <button class="side-menu__icon">
+              <img src="img/Chat Icon Container-2.svg" alt="Chat">
+          </button>
+          <button class="side-menu__icon">
+              <img src="img/Profile Icon Container.svg" alt="profile">
+          </button>
+          </div>
+  
+          <a href="mailto:mail@cps.com" class="side-menu__email">mail@cps.com</a>
+  
+          <a href="tel:88008908900" class="side-menu__phone">8 800 890 8900</a>
+  
+          <div class="side-menu__languages">
+              <a href="#">RU</a>
+              <a href="#">EN</a>
+              <a href="#">CH</a>
+          </div>
+      </div>
+  </aside>
+
+
+
+  <div class="page__main">
+  <header class="main-header">
+    
+     <button class="header__menu" type="button">
+  <img src="img/Menu icon.svg" alt="menu">
+</button>
+
+    <img class="header__logo" src="img/Logo group.svg" alt="logo">
+    <img class="header__call" src="img/Call Icon Container.svg" alt="call">
+    <img class="header__chat" src="img/Chat Icon Container.svg" alt="chat">
+    <img class="header__profile" src="img/Profile Icon Container.svg" alt="profile">
+    <div class="header__divider"></div>
+  
+    <img class="header__repair" src="img/Repair icon.svg" alt="repair">
+    <img class="header__status" src="img/Status icon.svg" alt="Status">
+  
+  
+    </header>
+
+    <main class="content">
+      <div class="content__container">
+      <h1 class="content__title">Service and Support </h1>
+      <div class="content__action">
+        <button class="header__action header__action--request">Submit a request</button>
+        <img class="header__action-icon" src="img/Repair icon.svg" alt="repair">
+      
+        <button class="header__action header__action--status">Repair Status</button>
+        <img class="header__action-icon" src="img/Status icon.svg" alt="Status">
+        </div>
+        </div>
+  
+      <nav class="content__menu">
+        <button>Brands we repair</button>
+        <button>Devices we repair</button>
+        <button>Additional services</button>
+        <button>Services prices</button>
+        <button>Addresses of service centres</button>
+        <button>Special prices</button>
+        <button>Reviews</button>
+      </nav>
+       <div class="container">
+        <div class="container__body">
+      <p class="body__text">We are an authorised service centre for Dell equipment repairs.
+        Only with us can you repair your Dell laptop with the official
+        manufacturer's warranty. </p>
+  
+        <p class="body__text only-tablet">
+              We have been successfully operating since 1992 and 
+              have earned a reputation as a reliable partner.
+        </p>
+  
+        <p class="body__text only-desktop">
+         We have been successfully operating since 1992 and have earned a
+          reputation as a reliable partner, as evidenced by our large number of loyal 
+          customers. We take pride in the fact that clients come to us through
+           recommendations and, in turn, recommend us to their family and friends.
+        </p>
+  
+        <button class="readmore">
+          <img class="readmore__icon" src="img/Expand icon.svg" alt="photo">
+          <span class="readmore__text">Read more</span>
+        </button>
+        </div>
+  
+        <img class="body__photo" src="img/Picture container.jpg" alt="main photo">
+  
+        </div>
+  
+    </main>
+
+    <section class="brands">
+    <h3 class="brand-swiper-title">REPAIR OF EQUIPMENTS FROM VARIOUS BRANDS</h3>
+    <div class="swiper swiper1">
+        <div class="swiper-wrapper swiper-wrapper__brand">
+         <div class="swiper-slide">
+            <a class="brand-card" href="#">
+            <img class="brand-card__logo" src="img/Product Image.png" alt="lenovo">
+            <span class="brand-card__icon">
+            <img src="img/Go Icon Container.svg" alt="go icon">
+            </span>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a class="brand-card" href="#">
+            <img class="brand-card__logo" src="img/Product Image-2.png" alt="samsung">
+            <span class="brand-card__icon">
+            <img src="img/Go Icon Container.svg" alt="go icon">
+            </span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a class="brand-card" href="#">
+            <img class="brand-card__logo" src="img/Product Image-5.png" alt="apple">
+            <span class="brand-card__icon">
+            <img src="img/Go Icon Container.svg" alt="go icon">
+            </span>
+            </a>
+          </div>
+          
+
+          <div class="swiper-slide">
+            <a class="brand-card" href="#">
+            <img class="brand-card__logo" src="img/Product Image-3.png" alt="bosch">
+            <span class="brand-card__icon">
+            <img src="img/Go Icon Container.svg" alt="go icon">
+            </span>
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a class="brand-card" href="#">
+            <img class="brand-card__logo" src="img/hp.png" alt="hp">
+            <span class="brand-card__icon">
+            <img src="img/Go Icon Container.svg" alt="go icon">
+            </span>
+            </a>
+          </div>
+
+          <div class="swiper-slide"> 
+            <a class="brand-card" href="#">
+            <img class="brand-card__logo" src="img/Product Image-6.png" alt="acer">
+            <span class="brand-card__icon">
+            <img src="img/Go Icon Container.svg" alt="go icon">
+            </span>
+            </a>
+          </div>
+
+        <div class="swiper-slide">
+          <a class="brand-card" href="#">
+            <img class="brand-card__logo" src="img/Brand Logo.png" alt="viewsonic">
+            <span class="brand-card__icon">
+            <img src="img/Go Icon Container.svg" alt="go icon">
+            </span>
+            </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a class="brand-card" href="#">
+            <img class="brand-card__logo" src="img/Brand Logo-2.png" alt="sony">
+            <span class="brand-card__icon">
+            <img src="img/Go Icon Container.svg" alt="go icon">
+            </span>
+            </a>
+        </div>
+        </div>
+    
+        <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="brands-grid">
+
+          <div class="brands-grid__inner">
+          <a class="brand-card" href="#">
+            <img class="brand-card__logo" src="img/Product Image.png" alt="lenovo">
+            <span class="brand-card__icon">
+            <img src="img/Go Icon Container.svg" alt="go icon"></span>
+            </a>
+            </div>
+
+
+            <div class="brands-grid__inner">
+            <a class="brand-card" href="#">
+            <img class="brand-card__logo" src="img/Product Image-2.png" alt="samsung">
+            <span class="brand-card__icon">
+            <img src="img/Go Icon Container.svg" alt="go icon"></span>
+            </a>
+            </div>
+
+            <div class="brands-grid__inner">
+            <a class="brand-card" href="#">
+            <img class="brand-card__logo" src="img/Product Image-5.png" alt="apple">
+            <span class="brand-card__icon">
+            <img src="img/Go Icon Container.svg" alt="go icon"></span>
+            </a>
+            </div>
+          
+            <div class="brands-grid__inner">
+            <a class="brand-card" href="#">
+            <img class="brand-card__logo" src="img/Brand Logo.png" alt="viewsonic">
+            <span class="brand-card__icon">
+            <img src="img/Go Icon Container.svg" alt="go icon"></span>
+            </a>
+            </div>
+
+            <div class="brands-grid__inner">
+            <a class="brand-card" href="#">
+            <img class="brand-card__logo" src="img/Product Image-3.png" alt="bosch">
+            <span class="brand-card__icon">
+            <img src="img/Go Icon Container.svg" alt="go icon"></span>
+            </a>
+            </div>
+             
+            <div class="brands-grid__inner">
+            <a class="brand-card" href="#">
+            <img class="brand-card__logo" src="img/hp.png" alt="hp">
+            <span class="brand-card__icon">
+            <img src="img/Go Icon Container.svg" alt="go icon"></span>
+            </a>
+            </div>
+
+            <div class="brands-grid__inner">
+            <a class="brand-card" href="#">
+            <img class="brand-card__logo" src="img/Product Image-6.png" alt="acer">
+            <span class="brand-card__icon">
+            <img src="img/Go Icon Container.svg" alt="go icon"></span>
+            </a>
+            </div>
+
+            <div class="brands-grid__inner">
+            <a class="brand-card" href="#">
+            <img class="brand-card__logo" src="img/Brand Logo-2.png" alt="sony">
+            <span class="brand-card__icon">
+            <img src="img/Go Icon Container.svg" alt="go icon"></span>
+            </a>
+            </div>
+            
+            <div class="brands-grid__inner">
+            <a class="brand-card" href="#">
+            <img class="brand-card__logo" src="img/Product Image.png" alt="lenovo">
+            <span class="brand-card__icon">
+            <img src="img/Go Icon Container.svg" alt="go icon"></span>
+            </a>
+            </div>
+
+            <div class="brands-grid__inner">
+            <a class="brand-card" href="#">
+            <img class="brand-card__logo" src="img/Product Image-2.png" alt="samsung">
+            <span class="brand-card__icon">
+            <img src="img/Go Icon Container.svg" alt="go icon"></span>
+            </a>
+            </div>
+          </div>
+
+        <button class="brands-toggle" id="brands-toggle">
+            <img src="img/show-icon.svg" class="toggle-icon toggle-icon--show" alt="show">
+          
+            
+            <img src="img/hide-icon.svg" class="toggle-icon toggle-icon--hide" alt="hide">
+          
+        <span class="toggle-text">Show all</span>
+      </button>
+
+      </section>
+  
+
+  <section class="repair">
+    <h4 class="repair__title">REPAIR OF VARIOUS TYPES OF EQUIPMENT</h4>
+
+    <div class="repair-list">
+
+      <div class="repair-card">
+        <p class="repair-card__title">Laptop repair</p>
+        <button class="repair-card__button">
+           <img src="img/Go Icon.svg" alt="icon">
+          </button>
+        </div>
+
+      <div class="repair-card">
+        <p class="repair-card__title"> Tablet repair</p> 
+      <button class="repair-card__button">
+         <img src="img/Go Icon.svg" alt="icon">
+        </button>
+      </div>
+
+      <div class="repair-card">
+        <p class="repair-card__title">PC repair</p>
+      <button class="repair-card__button"> 
+        <img src="img/Go Icon.svg" alt="icon">
+      </button>
+      </div>
+
+      <div class="repair-card">
+        <p class="repair-card__title">Monitor repair</p>
+        <button class="repair-card__button">
+       <img src="img/Go Icon.svg" alt="icon">
+      </button>
+    </div>
+
+    <div class="repair-card">
+      <p class="repair-card__title">CPU repair</p>
+      <button class="repair-card__button">
+     <img src="img/Go Icon.svg" alt="icon">
+    </button>
+  </div>
+
+  <div class="repair-card">
+    <p class="repair-card__title">Phone repair</p>
+    <button class="repair-card__button">
+   <img src="img/Go Icon.svg" alt="icon">
+  </button>
+</div>
+</div>
+
+<button class="repair-toggle" id="repair-toggle">
+  <img src="img/Expand icon.svg" class="toggle-icon toggle-icon--show" alt="show">
+
+  
+  <img src="img/hide-icon.svg" class="toggle-icon toggle-icon--hide" alt="hide">
+
+<span class="toggle-text">Show all</span>
+</button>
+
+
+      <div class="swiper swiper2">
+        <div class="swiper-wrapper swiper-wrapper__repair">
+    
+          <div class="swiper-slide repair-card">
+            <p class="repair-card__title">Laptop repair</p>
+            <button class="repair-card__button">
+              <img src="img/Go Icon.svg" alt="icon">
+            </button>
+          </div>
+    
+          <div class="swiper-slide repair-card">
+            <p class="repair-card__title">Tablet repair</p>
+            <button class="repair-card__button">
+              <img src="img/Go Icon.svg" alt="icon">
+            </button>
+          </div>
+    
+          <div class="swiper-slide repair-card">
+            <p class="repair-card__title">PC repair</p>
+            <button class="repair-card__button">
+              <img src="img/Go Icon.svg" alt="icon">
+            </button>
+          </div>
+    
+          <div class="swiper-slide repair-card">
+            <p class="repair-card__title">Monitor repair</p>
+            <button class="repair-card__button">
+              <img src="img/Go Icon.svg" alt="icon">
+            </button>
+          </div>
+
+          <div class="swiper-slide repair-card">
+            <p class="repair-card__title">CPU repair</p>
+            <button class="repair-card__button">
+              <img src="img/Go Icon.svg" alt="icon">
+            </button>
+          </div>
+
+          <div class="swiper-slide repair-card">
+            <p class="repair-card__title">Phone repair</p>
+            <button class="repair-card__button">
+              <img src="img/Go Icon.svg" alt="icon">
+            </button>
+          </div>
+    
+        </div>
+    
+        <div class="swiper-pagination swiper-pagination2"></div>
+      </div>
+    </section>
+ 
+    <section class="service-price">
+      <h4 class="service-price__title">SERVICE PRICES</h4>
+
+      <div class="service-price__list">
+      <div class="service-price__card">
+
+        <table class="service-price__table">
+          <thead class="service-price__info">
+            <tr>
+              <th class="service-price__table-heading">Repair service</th>
+              <th>Price</th>
+              <th>Deadline</th>
+              <th></th>
+            </tr>
+          </thead>
+
+          <tbody class="service-price__type">
+            <tr>
+              <td class="service-price__topic">Diagnostics</td>
+              <td>Free of charge</td>
+              <td> 30 min</td>
+              <td>
+                <button class="service-price__button">ORDER
+                <img src="img/dropdown.svg" alt="icon">
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="service-price__topic">Display replacement</td>
+              <td>1,000 ₽ </td>
+              <td> 30-120min</td>
+              <td>
+                <button class="service-price__button">ORDER
+                  <img src="img/dropdown.svg" alt="icon">
+                  </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="service-price__topic">Polyphonic speaker replacement</td>
+              <td>1,000 ₽</td>
+              <td>30-120min</td>
+              <td>
+                <button class="service-price__button">ORDER
+                  <img src="img/dropdown.svg" alt="icon">
+                  </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="service-price__topic">Testing with a technical report</td>
+              <td>1,000 ₽</td>
+              <td>30-120min</td>
+              <td>
+                <button class="service-price__button">ORDER
+                  <img src="img/dropdown.svg" alt="icon">
+                  </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="service-price__topic">Testing with a technical report</td>
+              <td> 1,000 ₽</td>
+              <td>30-120min</td>
+              <td>
+                <button class="service-price__button">ORDER
+                  <img src="img/dropdown.svg" alt="icon">
+                  </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="service-price__topic">Software replacement</td>
+              <td>1,000 ₽</td>
+              <td> 30-120min</td>
+              <td>
+                <button class="service-price__button">ORDER
+                  <img src="img/dropdown.svg" alt="icon">
+                  </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+        <div class="swiper swiper3">
+          <div class="swiper-wrapper swiper-wrapper__service">
+        
+            
+            <div class="swiper-slide swiper-slide__service">
+              <div class="service-card">
+        
+                <div class="service-card__row">
+                  <span class="service-card__label">Repair service</span>
+                  <span class="service-card__value">Diagnostics</span>
+                </div>
+        
+                <div class="service-card__row">
+                  <span class="service-card__label">Price</span>
+                  <span class="service-card__value">Free of charge</span>
+                </div>
+        
+                <div class="service-card__row service-card__row--with-button">
+                  <div class="service-card__pair">
+                    <span class="service-card__label">Term</span>
+                    <span class="service-card__value">30 min</span>
+                  </div>
+        
+                  <button class="service-card__button">
+                    ORDER
+                    <img src="img/dropdown.svg" alt="">
+                  </button>
+                </div>
+        
+              </div>
+            </div>
+        
+            
+            <div class="swiper-slide swiper-slide__service">
+              <div class="service-card">
+        
+                <div class="service-card__row">
+                  <span class="service-card__label">Repair service</span>
+                  <span class="service-card__value">Display replacement</span>
+                </div>
+        
+                <div class="service-card__row">
+                  <span class="service-card__label">Price</span>
+                  <span class="service-card__value">1,000 ₽</span>
+                </div>
+        
+                <div class="service-card__row service-card__row--with-button">
+                  <div class="service-card__pair">
+                    <span class="service-card__label">Term</span>
+                    <span class="service-card__value">30–120 min</span>
+                  </div>
+        
+                  <button class="service-card__button">
+                    ORDER
+                    <img src="img/dropdown.svg" alt="icon">
+                  </button>
+                </div>
+        
+              </div>
+            </div>
+        
+            
+            <div class="swiper-slide swiper-slide__service">
+              <div class="service-card">
+        
+                <div class="service-card__row">
+                  <span class="service-card__label">Repair service</span>
+                  <span class="service-card__value">Polyphonic speaker replacement</span>
+                </div>
+        
+                <div class="service-card__row">
+                  <span class="service-card__label">Price</span>
+                  <span class="service-card__value">1,000 ₽</span>
+                </div>
+        
+                <div class="service-card__row service-card__row--with-button">
+                  <div class="service-card__pair">
+                    <span class="service-card__label">Term</span>
+                    <span class="service-card__value">30–120 min</span>
+                  </div>
+        
+                  <button class="service-card__button">
+                    ORDER
+                    <img src="img/dropdown.svg" alt="icon">
+                  </button>
+                </div>
+        
+              </div>
+            </div>
+        
+            
+            <div class="swiper-slide swiper-slide__service">
+              <div class="service-card">
+        
+                <div class="service-card__row">
+                  <span class="service-card__label">Repair service</span>
+                  <span class="service-card__value">Testing with a technical report</span>
+                </div>
+        
+                <div class="service-card__row">
+                  <span class="service-card__label">Price</span>
+                  <span class="service-card__value">1,000 ₽</span>
+                </div>
+        
+                <div class="service-card__row service-card__row--with-button">
+                  <div class="service-card__pair">
+                    <span class="service-card__label">Term</span>
+                    <span class="service-card__value">30–120 min</span>
+                  </div>
+        
+                  <button class="service-card__button">
+                    ORDER
+                    <img src="img/dropdown.svg" alt="icon">
+                  </button>
+                </div>
+        
+              </div>
+            </div>
+        
+            
+            <div class="swiper-slide swiper-slide__service">
+              <div class="service-card">
+        
+                <div class="service-card__row">
+                  <span class="service-card__label">Repair service</span>
+                  <span class="service-card__value">Software replacement</span>
+                </div>
+        
+                <div class="service-card__row">
+                  <span class="service-card__label">Price</span>
+                  <span class="service-card__value">1,000 ₽</span>
+                </div>
+        
+                <div class="service-card__row service-card__row--with-button">
+                  <div class="service-card__pair">
+                    <span class="service-card__label">Term</span>
+                    <span class="service-card__value">30–120 min</span>
+                  </div>
+        
+                  <button class="service-card__button">
+                    ORDER
+                    <img src="img/dropdown.svg" alt="icon">
+                  </button>
+                </div>
+        
+              </div>
+            </div>
+        
+          </div>
+        
+          <div class="swiper-pagination swiper-pagination3"></div>
+        </div>
+        
+
+
+
+
+        <p class="service-price__note">All prices include VAT. The cost of repair is indicated for a single service. To receive a commercial proposal for ongoing maintenance, please submit a request.</p>
+         <div class="commercial-container">
+        <h5 class="commercial-proposal">Get a commercial proposal</h5>
+        <img src="img/More Icon.svg" alt="more icon">
+         </div>
+        </section>
+
+       <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-top">
+        <p class="business-footer">© 2019 CPS</p>
+        <p class="business-footer"> Developed by the Apesong team</p>
+          </div>
+        <p class="business-footer footer-link">Privacy Policy</p>
+        <p class="business-footer footer-note">The information presented on this page is not a public offer</p>
+        </div>
+       </footer>
+
+
+    </div>
+    </div>
+    </div>
+  
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
